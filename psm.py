@@ -8,7 +8,7 @@ st.markdown("""
 <style>
     .main {text-align: center;}
     .stTextInput {width: 60% !important; margin: auto; }
-    .stButton button {width: 50%; background_colour #4CAF50; color: white; font_size: 18px;}
+    .stButton button {width: 50%; background-color #4CAF50; color: white; font-size: 18px;}
     .stButton  button:hover { background-color: #45a049;}
      </style>
     """, unsafe_allow_html=True)
@@ -16,6 +16,7 @@ st.markdown("""
 #page tittle and decription
 st.title("🔐 Password Stength Generator")
 st.write("Enter your password below to check its security level. 🔍")
+
 #function to check password strength
 def check_password_strength(password):
     score = 0
@@ -24,9 +25,9 @@ def check_password_strength(password):
     if len(password) >= 8:
         score += 1 #increased score by 1
     else:
-        feedback.append("❌ Password should be **atleast 8 character long**")
+        feedback.append("❌ Password should be **atleast 8 character long**.")
 
-        if re.search(r"[A-Z]" , password) and re.search(r"[a-z]" , password):
+        if re.search(r"[A-Z]", password) and re.search(r"[a-z]" , password):
             score += 1
         else:
             feedback.append("❌ Password should include **both uppercase (A-Z) and loWercase (a-z) letters**.")

@@ -2,20 +2,20 @@ import re
 import streamlit as st
 
 # Page styling
-st.set_page_config(page_title="Password Strength Generator By Muhammad Mansoor", page_icon="🌘", layout="centered")
+st.set_page_config(page_title="Password Strength Checker By Muhammad Mansoor", page_icon="🌘", layout="centered")
 
 # Custom CSS
 st.markdown("""
 <style>
     .main {text-align: center;}
     .stTextInput {width: 60% !important; margin: auto; }
-    .stButton button {width: 50%; background-color: #4CAF50; color: white; font-size: 18px;}
-    .stButton  button:hover { background-color: #45a049;}
+    .stButton button {width: 50%; background-color: blue; color: white; font-size: 18px;}
+    .stButton  button:hover { background-color: red; color: white;}
 </style>
 """, unsafe_allow_html=True)
 
 # Page title and description
-st.title("🔐 Password Strength Checker")
+st.title("🔐 Password Strength Generator")
 st.write("Enter your password below to check its security level. 🔍")
 
 # Function to check password strength
